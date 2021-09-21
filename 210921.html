@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>21-09-21 리뷰</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <u><a href="index.html">홈으로</a></u>
+
+    <h3><2021년 9월 21일 화요일></h3>
+
+    <h4>1. 오늘의 목표</h4>
+    <p>- 선택자에 대해 더 알아보기 1</p>
+
+    <h4>2. 목표 실천하기</h4>
+    <p>얼마나 걸릴지는 모르겠지만 며칠 동안은 선택자에 대해서 좀 더 알아보려고 합니다.</p>
+    <p>일단은 이전에 배운 선택자의 기초에 대해 복습부터 해보겠습니다.</p>
+    <P>아래 동영상 강의 순서대로 보시면서 복습하시면 됩니다.</p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Me7qCXl94nQ"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wNpplOPbMSc"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N2WAj79Cna4"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p>오늘은 복습에 중점을 둔 터라 딱 한 가지만 추가로 학습하고 마치겠습니다.</p>
+    <p>바로 '부모 자식 선택자'입니다.</p>
+    <p>아래와 같은 코드가 있고 그 결과는 다음과 같습니다.</p>
+
+    <p><img src="210921_selector_1.jpg" alt="selector"></p>
+
+    <ul>
+      <li>오늘</li>
+      <li>수업</li>
+      <li>목표</li>
+    </ul>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+        <ol>
+          <li>부모</li>
+          <li>자식</li>
+          <li>선택자</li>
+        </ol>
+      <li>JavaScript</li>
+    </ol>
+
+    <p>여기서 'style' 태그에 'li' 선택자를 만들고 'color:red;'와 같이 선언하면 다음과 같은 결과를 얻게 됩니다.</p>
+
+    <iframe src="210921_appendix_1.html" height="250"></iframe>
+
+    <p>그런데 저는 'ul' 태그 내부의 'li' 태그에만 이를 적용하려고 합니다.</p>
+    <p>이럴 땐 다음과 같이 'ul' 태그를 쓰고 한 칸 띄운 후 'li' 태그를 작성하면 됩니다.</p>
+
+    <p><img src="210921_selector_2.jpg" alt="selector"></p>
+
+    <p>여기서 가장 먼저 나오는 태그가 부모 태그, 그 뒤에 나오는 태그가 자식 태그입니다.</p>
+    <p>그리고 그 결과는 다음과 같습니다.</p>
+
+    <iframe src="210921_appendix_2.html" height="250"></iframe>
+
+    <p>그 다음으로 HTML, CSS, JavaScript 텍스트의 크기를 조정해 보려고 합니다.</p>
+    <p>'style' 태그에 'ol {font-size:20px;}'와 같은 코드를 적용하면 '부모', '자식', '선택자' 텍스트도 같은 크기로 바뀌게 될 것입니다.</p>
+    <p>이럴 때는 다음과 같은 코드를 작성하면 됩니다.</p>
+
+    <p><img src="210921_selector_3.jpg" alt="selector"></p>
+
+    <p>부등호를 통해 'li' 태그가 'ol' 태그의 직계 자손임을 나타내주는 것입니다.</p>
+
+    <iframe src="210921_appendix_3.html" height="280"></iframe>
+
+    <p>그런데 원하는 결과를 얻지 못했습니다.</p>
+    <p>'ol' 태그의 직계 자손이면서 'li' 태그인 그런 태그가 2개나 있기 때문입니다.</p>
+    <p>이럴 때 필요한 것이 무엇인지 이전에도 배웠고 오늘 복습도 했습니다.</p>
+    <p>바로 클래스 선택자와 id 선택자입니다.</p>
+    <p>저는 id 선택자를 선택하여 적용해 보겠습니다.</p>
+    <p>다음과 같이 코드를 작성해 주면 됩니다.</p>
+
+    <p><img src="210921_selector_4.jpg" alt="selector"></p>
+
+    <p>그리고 그 결과는 다음과 같습니다.</p>
+
+    <iframe src="210921_appendix_4.html" height="280"></iframe>
+
+    <p>오늘은 여기까지 하겠습니다.</p>
+    <p>그럼 내일도 화이팅!</p>
+
+    <p><u><a href="index.html">홈으로</a></u></p>
+  </body>
+</html>
