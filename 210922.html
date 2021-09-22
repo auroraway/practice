@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>21-09-22 리뷰</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <u><a href="index.html">홈으로</a></u>
+
+    <h3><2021년 9월 22일 수요일></h3>
+
+    <h4>1. 오늘의 목표</h4>
+    <p>- 선택자에 대해 더 알아보기 2</p>
+
+    <h4>2. 목표 실천하기</h4>
+    <p>오늘도 어제에 이어서 선택자에 대해 좀 더 알아보겠습니다.</p>
+    <p>우선, '가상(Pseudo) 클래스 선택자'에 대해서 알아보겠습니다.</p>
+    <p>가상 클래스 선택자는 클래스 선택자와 같은 기능을 할 수 있습니다.</p>
+    <p>저는 여러 클래스 선택자들 중에서 'link', 'visited', 'hover', 'active', 'focus' 선택자만 알아보려고 합니다.</p>
+    <p>코드 작성은 쉽습니다.</p>
+    <p>CSS를 적용시키고자 하는 태그를 쓰고 그 뒤에 ':link', ':visited'와 같이 써주면 가상 클래스 선택자를 사용할 수 있게 됩니다.</p>
+    <p>그럼 예를 한 번 들어보겠습니다.</p>
+    <p>우선 다음과 같은 코드를 작성했습니다.</p>
+
+    <p><img src="210922_selector_1.jpg" alt="selector"></p>
+
+    <p>그럼 다음과 같은 결과가 화면에 출력됩니다.</p>
+
+    <p><img src="210922_selector_2.jpg" alt="selector" border="1px"></p>
+
+    <p>설명을 위해 가장 위 링크를 클릭하여 방문 상태로 남겨주세요.</p>
+    <p>아래와 같이 말이죠.</p>
+
+    <p><img src="210922_selector_3.jpg" alt="selector" border="1px"></p>
+
+    <p>가장 먼저, 아래와 같이 ':link' 가상 클래스 선택자를 적용시켜보겠습니다.</p>
+
+    <p><img src="210922_selector_4.jpg" alt="selector"></p>
+
+    <iframe src="210922_appendix_1.html" width="200" height="100" sandbox></iframe>
+
+    <p>그럼 방문한 적이 없는 '생활코딩' 링크가 빨간색으로 바뀌게 됩니다.</p>
+    <p>다음으로 ':visited' 가상 클래스 선택자를 적용시켜보겠습니다.</p>
+
+    <p><img src="210922_selector_5.jpg" alt="selector"></p>
+
+    <iframe src="210922_appendix_2.html" width="200" height="100" sandbox></iframe>
+
+    <p>선택자 이름에서 알 수 있듯이, 방문한 적 있는 링크의 색이 주황색으로 바뀌었음을 알 수 있습니다.</p>
+    <p>그런데, ':visited' 가상 클래스 선택자는 여러 보안상의 이유로 다음과 같은 속성만 변경 가능합니다.</p>
+    <p>'color', 'background-color', 'border-color', 'outline-color', 'The color parts of the fill and stroke properties'</p>
+    <p>다음으로 ':hover' 가상 클래스 선택자를 적용시켜보겠습니다.</p>
+
+    <p><img src="210922_selector_6.jpg" alt="selector"></p>
+
+    <iframe src="210922_appendix_3.html" width="200" height="100" sandbox></iframe>
+
+    <p>링크에 마우스 커서를 가져다 대면 링크의 색상이 노란색으로 바뀌는 것을 알 수 있습니다.</p>
+    <p>다음으로 ':active' 가상 클래스 선택자를 적용시켜보겠습니다.</p>
+
+    <p><img src="210922_selector_7.jpg" alt="selector"></p>
+
+    <iframe src="210922_appendix_4.html" width="200" height="100" sandbox></iframe>
+
+    <p>링크를 클릭하거나 클릭 상태를 유지하고 있을 때 링크 색상이 초록색으로 바뀌는 것을 알 수 있습니다.</p>
+
+    <p>마지막으로 ':focus' 가상 클래스 선택자를 적용시켜보겠습니다.</p>
+
+    <p><img src="210922_selector_8.jpg" alt="selector"></p>
+
+    <iframe src="210922_appendix_5.html" width="200" height="100" sandbox></iframe>
+
+    <p>'focus' 가상 클래스 선택자는 겉으로는 기능을 알 수 없습니다.</p>
+    <p>그런데 해당 선택자가 적용된 링크로 'tab' 키를 눌러서 이동하면 다음과 같이 링크 색상이 파란색으로 바뀌는 것을 알 수 있습니다.</p>
+    <img src="210922_selector_1.gif" alt="selector" border="1px">
+    <img src="210922_selector_2.gif" alt="selector" border="1px">
+    <p><좌: ':focus' 적용 X / 우: ':focus' 적용 O></p>
+    <p>링크 색상을 지정한 색상으로 바꿈으로써 해당 링크에 포커싱을 했다는 의미입니다.</p>
+
+    <p>이렇게 가상 클래스 선택자에 대한 설명을 마치겠습니다.</p>
+    <p>마지막으로 선택자 관련 게임 하나를 소개해드리겠습니다.</p>
+    <p>http://flukeout.github.io/</p>
+    <p>위 링크를 누르시면 게임 하나가 나오는데 이에 대한 설명은 아래 영상으로 대체하겠습니다.</p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hfg5mtXp1ng"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p>아래 영상들은 위 영상과 이어지는 영상이지만, 위 게임을 스스로 클리어한 후 아래 영상들을 보시는 것을 추천드립니다.</p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1k4ZnF3ebMY"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hwLLOhXOsY4"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/duG8eiT9NFw"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p>그럼 선택자에 대한 설명은 여기서 마치겠습니다.</p>
+    <p>그럼 내일도 화이팅!</p>
+
+    <p><u><a href="index.html">홈으로</a></u></p>
+  </body>
+</html>
