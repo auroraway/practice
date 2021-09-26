@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>21-09-26 리뷰</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <u><a href="index.html">홈으로</a></u>
+
+    <h3><2021년 9월 26일 일요일></h3>
+
+    <h4>1. 오늘의 목표</h4>
+    <p>- Block level element를 Inline element로 바꾸기</p>
+    <p>- box-sizing 속성에 대해 알아보기</p>
+    <p>- 마진 상쇄(겹침) 현상(Margin-collapsing)에 대해 알아보기</p>
+
+    <h4>2. 목표 실천하기</h4>
+    <p>이전에 Block level element와 Inline element가 무엇인지 배웠습니다. <a href="210911.html">(참조)</a></p>
+    <p>오늘의 첫 번째 목표는 Block level element를 Inline element로 바꿔보는 것입니다.</p>
+    <p>방법은 아주 간단합니다.</p>
+    <p>앞서 배웠듯이 'h2' 태그와 'a' 태그의 기본 영역은 다음과 같았습니다.</p>
+
+    <iframe src="210911_appendix_2.html" sandbox></iframe>
+
+    <p>이때 다음과 같은 코드를 적용시켜주면 해당 영역이 바뀌게 됩니다.</p>
+
+    <img src="210926_element_1.jpg" alt="element">
+
+    <p><iframe src="210926_appendix_1.html"></iframe></p>
+
+    <p>다음으로는 box-sizing 속성에 대해 알아보겠습니다.</p>
+    <p>box-sizing 속성이란 기존 방법 외 다른 방법으로 박스 크기를 화면에 표시하는 속성입니다.</p>
+    <p>예를 들어, 다음과 같은 코드가 있습니다.</p>
+
+    <img src="210926_box_sizing_1.jpg" alt="element">
+
+    <p><iframe src="210926_appendix_2.html" height="170" sandbox></iframe></p>
+
+    <p>그러면 위와 같이 화면에 출력되는데요.</p>
+    <p>'div' 태그에 'width:150px' 속성을 적용했지만 테두리(border)의 크기 때문에 똑같은 길이로 출력되지 않았습니다.</p>
+    <p>그리고 보시다시피 텍스트 영역만 똑같은 길이로 출력되었죠.</p>
+    <p>이때, box-sizing 속성을 이용하면 테두리를 포함한 전체 길이를 같게 만들 수 있습니다.</p>
+    <p>다음과 같은 코드를 적용하기만 하면 됩니다.</p>
+
+    <img src="210926_box_sizing_2.jpg" alt="element">
+
+    <p><iframe src="210926_appendix_3.html" height="170" sandbox></iframe></p>
+
+    <p>보시다시피, 'box-sizing: border-box;' 선언은 텍스트 영역의 크기를 줄여준다는 것을 알 수 있습니다.</p>
+    <p>오늘의 마지막 목표는 마진 상쇄(겹침) 현상에 대해 알아보는 것입니다.</p>
+    <p>박스 모델을 공부할 때 마진(Margin)은 여백을 의미한다고 했습니다.</p>
+    <p>이 여백이 어떠한 이유들로 사라지는 현상이 발생하는데, 이를 마진 상쇄(겹침) 현상이라고 합니다.</p>
+    <p>이 개념은 어렵기 때문에 전문가의 설명으로 대신하겠습니다.</p>
+    <p>아래 세 가지 영상들을 봐주시길 바랍니다.</p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zZjTUDAR0ik"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1NMNuVbY2Kc"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WwSV74r2f24"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+    <p>오늘은 여기까지 하겠습니다.</p>
+    <p>그럼 내일도 화이팅!</p>
+
+    <p><u><a href="index.html">홈으로</a></u></p>
+  </body>
+</html>
