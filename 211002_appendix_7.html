@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        border-bottom: 1px solid gray;
+      }
+      footer {
+        border-top: 1px solid gray;
+      }
+      .content {
+        display: flex;
+      }
+      .content nav {
+        border-right: 1px solid gray;
+      }
+      .content aside {
+        border-left: 1px solid gray;
+      }
+      nav, aside {
+        flex-basis: 300px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>이곳은 'Header' 영역입니다.</h1>
+      </header>
+      <section class="content">
+        <nav>
+          이곳은 'Nav' 영역입니다.
+        </nav>
+        <main>
+          이곳은 'Main' 영역입니다.
+        </main>
+        <aside>
+          이곳은 'Ad' 영역입니다.
+        </aside>
+      </section>
+      <footer>
+        이곳은 'Footer' 영역입니다.
+      </footer>
+    </div>
+  </body>
+</html>
