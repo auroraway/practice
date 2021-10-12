@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>21-10-12 리뷰</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .color {
+        border: 5px solid;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <u><a href="index.html">홈으로</a></u>
+    <h3><2021년 10월 12일 화요일></h3>
+
+    > MEMO: 학교 시험공부 때문에 당분간 코딩은 아주 여유롭게 하려고 합니다ㅠ
+
+    <h4>1. 오늘의 목표</h4>
+    <p>- '혼합(blend)' 기법에 대해 알아보기 1</p>
+
+    <h4>2. 목표 실천하기</h4>
+    <p>오늘은 '혼합(blend)' 기법에 대해 알아보겠습니다.</p>
+    <p>이 기능을 이용하면 서로 다른 이미지를 혼합하여 새로운 이미지를 만들어내는 기법입니다.</p>
+    <p>이때, 아무것도 없이 색만 칠해진 배경도 이미지로 간주합니다.</p>
+    <div class="color"></div>
+    <p>예를 들어, 위와 같이 파란색으로만 칠해진 배경도 이미지로 취급한다는 것입니다.</p>
+    <p>그럼 혼합 기능을 적용시켜보겠습니다.</p>
+    <p>우선, 다음과 같은 코드를 작성했습니다.</p>
+
+    <img src="211012_blend_1.jpg" alt="blend">
+
+    <p><iframe src="211012_appendix_1.html" width="1000" height="525"></iframe></p>
+
+    <p>여기에 이미지 하나를 추가하여 두 이미지를 혼합시키려 합니다.</p>
+    <p>우선, 이미지 하나를 추가해 줍니다.</p>
+
+    <img src="211012_blend_2.jpg" alt="blend">
+
+    <p><iframe src="211012_appendix_2.html" width="1000" height="525"></iframe></p>
+
+    <p>여기까지는 단순히 두 이미지를 동시에 띄어놓은 것과 같습니다.</p>
+    <p>이제 두 이미지를 혼합해 보겠습니다.</p>
+    <p>'background-blend-mode' 속성을 이용하면 되는데, 이때 속성값으로는 여러 가지가 있습니다.</p>
+    <p>직접 하나하나 적용해 보면서 마음에 드는 속성값을 이용하면 됩니다.</p>
+    <p>링크를 클릭하면 각각의 속성값들에 대한 설명을 확인할 수 있습니다. <a href="https://developer.mozilla.org/ko/docs/Web/CSS/blend-mode">(링크)<a/></p>
+    <p>저는 이 중에서 'overlay' 속성값을 적용시켰습니다.</p>
+
+    <img src="211012_blend_3.jpg" alt="blend">
+
+    <p><iframe src="211012_appendix_3.html" width="1000" height="525"></iframe></p>
+
+    <p>위와 같이 두 이미지가 혼합되어 새로운 이미지를 형성한 것을 알 수 있습니다.</p>
+    <p>여기에 'hover' 가상 클래스 선택자를 적용한 결과는 아래와 같습니다.</p>
+
+    <img src="211012_blend_4.jpg" alt="blend">
+
+    <p><iframe src="211012_appendix_4.html" width="1000" height="525"></iframe></p>
+
+    <p>오늘은 여기까지 하겠습니다.</p>
+    <p>그럼 내일도 화이팅!</p>
+
+    <p><u><a href="index.html">홈으로</a></u></p>
+  </body>
+</html>
