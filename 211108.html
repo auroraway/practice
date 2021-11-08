@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>21-11-08 리뷰</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <u><a href="index.html">홈으로</a></u>
+    <h3><2021년 11월 8일 월요일></h3>
+
+    <h4>1. 오늘의 목표</h4>
+    <p>- Transform에 대해 알아보기</p>
+
+    <h4>2. 목표 실천하기</h4>
+    <p>오늘은 'transform'에 대해 알아보려고 합니다.</p>
+    <p>'transform'은 '변형하다'라는 뜻을 가진 단어입니다.</p>
+    <p>이 'transform'을 이용하면 요소의 크기, 위치, 모양 등을 변경할 수 있습니다.</p>
+    <p>'transform' 속성의 속성값으로는 'scale', 'rotate', 'skew', 'translate' 등 여러 가지가 있습니다.</p>
+    <p>저는 그중에 하나인 'scale'로 예를 들어보겠습니다.</p>
+    <p>다음과 같이 코드를 작성합니다.</p>
+
+    <img src="211108_transform_1.png" alt="transform">
+
+    <p>참고로 저는 'iframe' 태그로 해당 html 파일을 삽입했기 때문에 아래와 같이 박스 모델을 통해 조금 다듬었습니다.</p>
+
+    <img src="211108_transform_2.png" alt="transform">
+    <p><iframe src="211108_appendix_1.html" width="500px" height="150px"></iframe></p>
+
+    <p>앞으로 모든 코드에서 박스 모델과 관련된 것들은 무시하시면 됩니다.</p>
+    <p>그럼 본격적으로 시작해 보겠습니다.</p>
+    <p>우선은 요소의 길이를 늘리거나 줄여보려고 합니다.</p>
+    <p>이럴 땐 'transform: scaleX()', 'transform: scaleY()', 'transform: scaleZ()'과 같은 선언을 하면 됩니다.</p>
+    <p>여기서 X, Y, Z는 우리가 알고 있는 x축, y축, z축 방향이라고 생각하면 됩니다.</p>
+    <p>괄호 안에는 숫자를 넣어주면 되는데, 0.5배면 0.5, 2배면 2, 이렇게 넣어주면 됩니다.</p>
+    <p>저는 'transform: scaleX(2)'를 적용해 x축 방향으로 2배 늘려보겠습니다.</p>
+
+    <img src="211108_transform_3.png" alt="transform">
+    <p><iframe src="211108_appendix_2.html" width="900px" height="150px"></iframe></p>
+
+    <p>그럼 이 상태에서 'transform: scaleY(1.5)를 적용하여 y축 방향으로 1.5배 늘려보겠습니다.</p>
+
+    <img src="211108_transform_4.png" alt="transform">
+    <p><iframe src="211108_appendix_3.html" width="900px" height="150px"></iframe></p>
+
+    <p>그런데 위와 같이 코드를 작성했더니 x축 길이가 원상태로 돌아오고 y축만 1.5배 늘어났습니다.</p>
+    <p>위와 같이 코드를 작성하면 가장 마지막에 적용한 속성을 따르게 됩니다.</p>
+    <p>동시에 길이를 바꾸기 위해선 'transform: scaleX(2) scaleY(1.5)'와 같이 선언하거나, 'transform: scale(2, 1.5)'와 같이 선언하면 됩니다.</p>
+    <p>저는 두 번째 방법을 선택했습니다.<p>
+
+    <img src="211108_transform_5.png" alt="transform">
+    <p><iframe src="211108_appendix_4.html" width="900px" height="150px"></iframe></p>
+
+    <p>그럼 위와 같이 x축 방향으로 2배, y축 방향으로 1.5배 늘어난 것을 확인할 수 있습니다.</p>
+    <p>'transform: scale()'말고도 다른 속성값에 대한 예시는 아래에서 확인 가능합니다.</p>
+    <p>파란 상자에 마우스 커서를 가져다 대보세요.</p>
+
+    <p>출처: <a href="https://codepen.io/vineethtrv/pen/XKKEgM">CODEPEN, Vineeth.TR</a></p>
+    <p><iframe src="211108_appendix_5.html" width="90%" height="500px"></iframe></p>
+
+    <p>'transform-origin' 속성은 조금 어려울 수도 있지만, 잘 따져가면서 자신의 것으로 만드시길 바랍니다.</p>
+    <p>위 예시에서 보다시피 단위가 어떤 것은 deg고, 어떤 것은 px이고, 또 어떤 것은 아무런 단위도 사용하지 않고 있습니다.</p>
+    <p>즉 각각의 속성값들마다 사용하는 단위가 있거나 없다는 뜻입니다.</p>
+    <p>우측 링크를 클릭하셔서 어떤 속성값에 어떤 단위가 사용되는지 확인하시길 바랍니다.
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform#formal_syntax">(클릭)</a></p>
+
+    <p>오늘 공부한 것들을 잘 이용하면 엄청난 효과를 낼 수 있게 됩니다.</p>
+    <p>저는 틈틈이 이 파트를 더 깊게 공부해 보려고 합니다.</p>
+    <p>아래 링크들을 눌러보시면 이를 활용한 예시들을 볼 수 있습니다.</p>
+    <p>아마 놀라실 수도 있습니다.</p>
+
+    <p><a href="http://ianlunn.github.io/Hover/">Hover.css</a></p>
+    <p><a href="http://elrumordelaluz.github.io/csshake/#1">CSShake</a></p>
+    <p><a href="https://www.minimamente.com/project/magic/">magic animation</a></p>
+
+    <p>그럼 오늘은 여기까지 하겠습니다.</p>
+    <p>내일도 화이팅!</p>
+
+    <p><u><a href="index.html">홈으로</a></u></p>
+  </body>
+</html>
